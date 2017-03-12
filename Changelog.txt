@@ -1,5 +1,31 @@
 Changelog For Render Kernel!!
 
+R3:
+45d051a (HEAD -> rk-los-n-hmp-master, origin/rk-los-n-hmp-master) perf/core: Fix concurrent sys_perf_event_open() vs. 'move_group' race
+ad13e75 sctp: avoid BUG_ON on sctp_wait_for_sndbuf
+511ba09 op3: Remove CONFIG_TIMER_STATS
+cba1126 ipc/shm: Fix shmat mmap nil-page protection
+3998c0c0 ANDROID: ion: check for kref overflow
+62f158a qcacld-2.0: Remove obsolete set/reset ssid hotlist
+7ae4ba2 mpi: Fix NULL ptr dereference in mpi_powm() [ver #3]
+1803ef3 qcacld-2.0: Update to LA.UM.5.5.r1-03600-8x96.0
+5b60ec8 Merge tag 'LA.UM.5.5.r1-03600-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into cm-14.1
+f6139e8 Revert "msm: camera: Comment out upstream changes to get camera working"
+cf3a874 Defconfig: Update
+28436f5 leds: Boeffla touchkey control driver: let's use the existing fb_notifier instead of adding another one
+f2b6754 leds: Fix Boeffla touchkey control driver breaking LPM mode (charging when device is off)
+274f46e leds: Boeffla touchkey control driver 1.2.0 for OnePlus3/OnePlus2
+383a978 leds: Boeffla touchkey control driver 1.1.0 for OnePlus3/OnePlus2
+0cc1d47 ANDROID: ext4 crypto: Disables zeroing on truncation when there's no key
+50dbf8a UPSTREAM: udp: properly support MSG_PEEK with truncated buffers
+8170f39 UPSTREAM: l2tp: fix racy SOCK_ZAPPED flag check in l2tp_ip{,6}_bind()
+aba1117 ANDROID: mnt: remount should propagate to slaves of slaves
+d2a62dd ANDROID: sdcardfs: support direct-IO (DIO) operations
+daf3679 ANDROID: sdcardfs: implement vm_ops->page_mkwrite
+02dcbc2 Revert "sdcardfs: Flag files as non-mappable"
+35e45e1 cpufreq: cache tunables for ondemand and conservative governors
+558617d Build: Update Linaro TC to 6.3.1 022017
+
 R2:
 8ff591a (rk-los-n-hmp-r1-t1) qcacld-2.0: Update to LA.UM.5.5.r1-03400-8x96.0
 daa389b Revert "msm: isp: Add support for VFE resolution limit"
