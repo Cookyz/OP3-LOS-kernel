@@ -2,6 +2,9 @@
 # Automatically generated file; DO NOT EDIT.
 # Linux/arm64 3.18.31 Kernel Configuration
 #
+#### MISC ####
+CONFIG_CAPACITY_CLAMPING=y
+
 CONFIG_ARM64=y
 CONFIG_64BIT=y
 CONFIG_ARCH_PHYS_ADDR_T_64BIT=y
