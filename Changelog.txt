@@ -1,5 +1,12 @@
 Changelog For Render Kernel!!
 
+R4:
+423a224 (HEAD -> rk-los-n-hmp-master, rk-los-n-hmp-r4-t1) power: oneplus_fastcg: Silence log spam
+ad137b6 misc: Sync with OxygenOS 4.1.0 kernel release
+54e93bb mdss: livedisplay: Fix memory leaks in mdss_livedisplay_update()
+84155db (origin/rk-los-n-hmp-r4-t1) qcacld-2.0: Update to LA.UM.5.5.r1-03800-8x96.0
+2fd238e Merge 86a83c93bfc72bf9d99314ff4e56642b8730f803 on remote branch
+
 R3:
 45d051a (HEAD -> rk-los-n-hmp-master, origin/rk-los-n-hmp-master) perf/core: Fix concurrent sys_perf_event_open() vs. 'move_group' race
 ad13e75 sctp: avoid BUG_ON on sctp_wait_for_sndbuf
