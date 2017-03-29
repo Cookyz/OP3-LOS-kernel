@@ -1591,8 +1591,6 @@ static irqreturn_t synaptics_irq_thread_fn(int irq, void *dev_id)
 	uint8_t status = 0;
 	uint8_t inte = 0;
 
-	ts->timestamp = ktime_get();
-
 	if (atomic_read(&ts->is_stop) == 1)
 	{
 		return IRQ_HANDLED;
@@ -1601,6 +1599,8 @@ static irqreturn_t synaptics_irq_thread_fn(int irq, void *dev_id)
 	if( ts->enable_remote) {
 		return IRQ_HANDLED;
 	}
+
+	ts->timestamp = ktime_get();
 
 	ret = synaptics_rmi4_i2c_write_byte(ts->client, 0xff, 0x00 );
 	ret = synaptics_rmi4_i2c_read_word(ts->client, F01_RMI_DATA_BASE);
